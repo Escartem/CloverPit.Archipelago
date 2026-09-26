@@ -1,4 +1,8 @@
-# CloverPit Archipelago
+# CloverPit Archipelago (for unlicensed games)
+
+### Some cracked games use a steam emulator that blocks the archipelago.gg domain / port (as a side effect of patching steam), this version removes the steam check entirely within the game. If you still encounter issues, make sure to delete CloverPit_Data/Plugins/x86_64(or ARM64)/steam_api64.dll
+
+---
 
 A **multiworld randomizer mod** designed to work with the **Archipelago** randomizer system.
 
