@@ -32,20 +32,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>D:\SteamLibrary\steamapps\common\CloverPit\BepInEx\core\0Harmony.dll</HintPath>
+      <HintPath>libs\bepinex\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Archipelago.MultiClient.Net">
       <HintPath>libs\Archipelago.MultiClient.Net.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>D:\SteamLibrary\steamapps\common\CloverPit\CloverPit_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>libs\game\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\SteamLibrary\steamapps\common\CloverPit\CloverPit_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>libs\game\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx">
-      <HintPath>D:\SteamLibrary\steamapps\common\CloverPit\BepInEx\core\BepInEx.dll</HintPath>
+      <HintPath>libs\bepinex\BepInEx.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>libs\Newtonsoft.Json.dll</HintPath>
@@ -61,44 +61,44 @@
     <Reference Include="System.Xml" />
     <Reference Include="UniTask, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\SteamLibrary\steamapps\common\CloverPit\CloverPit_Data\Managed\UniTask.dll</HintPath>
+      <HintPath>libs\game\UniTask.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\SteamLibrary\steamapps\common\CloverPit\CloverPit_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+      <HintPath>libs\game\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>D:\SteamLibrary\steamapps\common\CloverPit\CloverPit_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>libs\game\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\SteamLibrary\steamapps\common\CloverPit\CloverPit_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+      <HintPath>libs\game\UnityEngine.AnimationModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\SteamLibrary\steamapps\common\CloverPit\CloverPit_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+      <HintPath>libs\game\UnityEngine.AudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>D:\SteamLibrary\steamapps\common\CloverPit\CloverPit_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>libs\game\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\SteamLibrary\steamapps\common\CloverPit\CloverPit_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <HintPath>libs\game\UnityEngine.IMGUIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputLegacyModule">
-      <HintPath>D:\SteamLibrary\steamapps\common\CloverPit\CloverPit_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+      <HintPath>libs\game\UnityEngine.InputLegacyModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\SteamLibrary\steamapps\common\CloverPit\CloverPit_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+      <HintPath>libs\game\UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\SteamLibrary\steamapps\common\CloverPit\CloverPit_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <HintPath>libs\game\UnityEngine.TextRenderingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\SteamLibrary\steamapps\common\CloverPit\CloverPit_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <HintPath>libs\game\UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -187,6 +187,7 @@
     <Compile Include="Locations\APLocations.cs" />
     <Compile Include="APUI\APConnectUI.cs" />
     <Compile Include="APUI\APConsoleUI.cs" />
+    <Compile Include="Patches\SteamPatch.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
